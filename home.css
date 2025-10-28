@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+    background: rgb(185, 255, 185);
+    color: black;
+    line-height: 1.7;
+    overflow-x:hidden;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* header & nav */
+header{
+    background: cyan;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    transition: all 0,4s ease;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.logo-text{
+    font-family: 'poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    color: black;
+    letter-spacing: 1px;
+}
+
+.logo-text span{
+    color:blueviolet;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap:35px;
+}
+
+nav a{
+    text-decoration: none;
+    color:rgb(69, 13, 221);
+    font-weight: 600;
+    font-size:16px;
+    position: relative;
+    padding: 5px 0;
+    transition: all 0.3s ease;
+}
+
+nav a:after{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width:0;
+    height: 2px;
+    background:rgb(221, 13, 159);
+    transition: width 0.3s ease;
+}
+
+nav a:hover:after{
+    width: 100%;
+}
+
+.nav-buttons{
+    display: flex;
+    gap: 15px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+
+.btn-primary{
+    background:rgb(190, 255, 12);
+    color:rgb(150, 127, 255);
+}
+
+.btn-primary:hover {
+    background: rgb(48, 255, 21);
+    transform: translateY(-3px);
+}
